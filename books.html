@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books - BookHive</title>
+</head>
+<body>
+
+    <header>
+        <h1>🛒 BookHive</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">🛒 Cart (0)</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>All Books</h2>
+            <p>Browse our complete collection of 2,000+ books</p>
+        </section>
+
+        <section class="filters">
+            <div class="search-box">
+                <label for="search-input">Search books</label>
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search books, authors, or genres..."
+                >
+            </div>
+
+            <div class="filter-group">
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="education">Education</option>
+                    <option value="biography">Biography</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sort-by">Sort By</label>
+                <select id="sort-by">
+                    <option value="default">Default</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="price-range">Maximum Price (₹)</label>
+                <input
+                    type="number"
+                    id="price-range"
+                    min="0"
+                    placeholder="e.g. 500"
+                >
+            </div>
+        </section>
+
+        <section class="book-listing">
+            <h2>Our Collection</h2>
+
+            <p>Showing our featured selection</p>
+
+            <div class="books-grid">
+
+                <article class="book-card" data-id="1" data-category="biography">
+                    <img
+                        src="images/books/wings-of-fire.jpg"
+                        alt="Wings of Fire book cover"
+                        loading="lazy"
+                    >
+                    <h3>Wings of Fire</h3>
+                    <p>Author: A. P. J. Abdul Kalam</p>
+                    <p>Category: Biography</p>
+                    <p class="price">₹299</p>
+                    <a href="book.html?id=1">View Details</a>
+                    <button type="button" data-id="1">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="2" data-category="fiction">
+                    <img
+                        src="images/books/the-alchemist.jpg"
+                        alt="The Alchemist book cover"
+                        loading="lazy"
+                    >
+                    <h3>The Alchemist</h3>
+                    <p>Author: Paulo Coelho</p>
+                    <p>Category: Fiction</p>
+                    <p class="price">₹349</p>
+                    <a href="book.html?id=2">View Details</a>
+                    <button type="button" data-id="2">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="3" data-category="business">
+                    <img
+                        src="images/books/atomic-habits.jpg"
+                        alt="Atomic Habits book cover"
+                        loading="lazy"
+                    >
+                    <h3>Atomic Habits</h3>
+                    <p>Author: James Clear</p>
+                    <p>Category: Business</p>
+                    <p class="price">₹499</p>
+                    <a href="book.html?id=3">View Details</a>
+                    <button type="button" data-id="3">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="4" data-category="education">
+                    <img
+                        src="images/books/sapiens.jpg"
+                        alt="Sapiens book cover"
+                        loading="lazy"
+                    >
+                    <h3>Sapiens</h3>
+                    <p>Author: Yuval Noah Harari</p>
+                    <p>Category: Education</p>
+                    <p class="price">₹599</p>
+                    <a href="book.html?id=4">View Details</a>
+                    <button type="button" data-id="4">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="5" data-category="fiction">
+                    <img
+                        src="images/books/1984.jpg"
+                        alt="1984 book cover"
+                        loading="lazy"
+                    >
+                    <h3>1984</h3>
+                    <p>Author: George Orwell</p>
+                    <p>Category: Fiction</p>
+                    <p class="price">₹249</p>
+                    <a href="book.html?id=5">View Details</a>
+                    <button type="button" data-id="5">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="6" data-category="biography">
+                    <img
+                        src="images/books/steve-jobs.jpg"
+                        alt="Steve Jobs biography book cover"
+                        loading="lazy"
+                    >
+                    <h3>Steve Jobs</h3>
+                    <p>Author: Walter Isaacson</p>
+                    <p>Category: Biography</p>
+                    <p class="price">₹699</p>
+                    <a href="book.html?id=6">View Details</a>
+                    <button type="button" data-id="6">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="7" data-category="business">
+                    <img
+                        src="images/books/rich-dad-poor-dad.jpg"
+                        alt="Rich Dad Poor Dad book cover"
+                        loading="lazy"
+                    >
+                    <h3>Rich Dad Poor Dad</h3>
+                    <p>Author: Robert Kiyosaki</p>
+                    <p>Category: Business</p>
+                    <p class="price">₹399</p>
+                    <a href="book.html?id=7">View Details</a>
+                    <button type="button" data-id="7">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="8" data-category="education">
+                    <img
+                        src="images/books/ikigai.jpg"
+                        alt="Ikigai book cover"
+                        loading="lazy"
+                    >
+                    <h3>Ikigai</h3>
+                    <p>Authors: Héctor García and Francesc Miralles</p>
+                    <p>Category: Education</p>
+                    <p class="price">₹299</p>
+                    <a href="book.html?id=8">View Details</a>
+                    <button type="button" data-id="8">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="9" data-category="fiction">
+                    <img
+                        src="images/books/harry-potter.jpg"
+                        alt="Harry Potter book cover"
+                        loading="lazy"
+                    >
+                    <h3>Harry Potter and the Philosopher's Stone</h3>
+                    <p>Author: J. K. Rowling</p>
+                    <p>Category: Fiction</p>
+                    <p class="price">₹450</p>
+                    <a href="book.html?id=9">View Details</a>
+                    <button type="button" data-id="9">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="10" data-category="business">
+                    <img
+                        src="images/books/think-and-grow-rich.jpg"
+                        alt="Think and Grow Rich book cover"
+                        loading="lazy"
+                    >
+                    <h3>Think and Grow Rich</h3>
+                    <p>Author: Napoleon Hill</p>
+                    <p>Category: Business</p>
+                    <p class="price">₹299</p>
+                    <a href="book.html?id=10">View Details</a>
+                    <button type="button" data-id="10">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="11" data-category="education">
+                    <img
+                        src="images/books/deep-work.jpg"
+                        alt="Deep Work book cover"
+                        loading="lazy"
+                    >
+                    <h3>Deep Work</h3>
+                    <p>Author: Cal Newport</p>
+                    <p>Category: Education</p>
+                    <p class="price">₹399</p>
+                    <a href="book.html?id=11">View Details</a>
+                    <button type="button" data-id="11">Add to Cart</button>
+                </article>
+
+                <article class="book-card" data-id="12" data-category="fiction">
+                    <img
+                        src="images/books/the-hobbit.jpg"
+                        alt="The Hobbit book cover"
+                        loading="lazy"
+                    >
+                    <h3>The Hobbit</h3>
+                    <p>Author: J. R. R. Tolkien</p>
+                    <p>Category: Fiction</p>
+                    <p class="price">₹399</p>
+                    <a href="book.html?id=12">View Details</a>
+                    <button type="button" data-id="12">Add to Cart</button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BookHive. All rights reserved.</p>
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+</body>
+</html>
